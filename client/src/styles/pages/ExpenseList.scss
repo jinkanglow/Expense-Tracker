@@ -1,0 +1,114 @@
+.expense-list-container {
+  padding: 24px;
+
+  .header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+
+    .title-container {
+      .subtitle {
+        color: rgba(0, 0, 0, 0.6);
+        margin-top: 4px;
+      }
+    }
+  }
+
+  .content-wrapper {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .action-buttons {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-end;
+
+    .MuiIconButton-root {
+      padding: 4px;
+      
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.04);
+      }
+    }
+  }
+  //   .edit-button {
+  //     color: #1976d2;
+  //     &:hover {
+  //       background-color: rgba(25, 118, 210, 0.04);
+  //     }
+  //   }
+
+  //   .delete-button {
+  //     color: #d32f2f;
+  //     &:hover {
+  //       background-color: rgba(211, 47, 47, 0.04);
+  //     }
+  //   }
+  // }
+
+  .category-chip {
+    &.food {
+      background-color: #e3f2fd;
+      color: #1565c0;
+    }
+    &.transportation {
+      background-color: #f3e5f5;
+      color: #7b1fa2;
+    }
+    &.shopping {
+      background-color: #e8f5e9;
+      color: #2e7d32;
+    }
+    &.bills {
+      background-color: #fff3e0;
+      color: #e65100;
+    }
+    &.entertainment {
+      background-color: #fce4ec;
+      color: #c2185b;
+    }
+    &.healthcare {
+      background-color: #e1f5fe;
+      color: #0277bd;
+    }
+    &.travel {
+      background-color: #f3e5f5;
+      color: #6a1b9a;
+    }
+    &.education {
+      background-color: #e8eaf6;
+      color: #283593;
+    }
+    &.other {
+      background-color: #fafafa;
+      color: #424242;
+    }
+  }
+
+  .expense-dialog {
+    .dialog-title {
+      padding: 24px 24px 16px;
+    }
+
+    .dialog-content {
+      padding: 0 24px 24px;
+    }
+
+    .expense-form {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-top: 16px;
+
+      .form-actions {
+        display: flex;
+        justify-content: flex-end;
+        gap: 8px;
+        margin-top: 24px;
+      }
+    }
+  }
+}

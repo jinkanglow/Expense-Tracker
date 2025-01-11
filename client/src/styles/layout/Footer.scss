@@ -1,0 +1,209 @@
+.footer {
+  background: linear-gradient(to right, #f8fafc, #ffffff);
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 2rem 0;
+  margin-top: auto;
+  overflow-x: hidden; // Prevent horizontal scrolling
+
+  .container {
+    width: 100%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 4rem; // Wider padding for larger screens
+    box-sizing: border-box; // Include padding and border in the element's total width and height
+
+    @media (max-width: 1200px) {
+      padding: 0 3rem;
+    }
+
+    @media (max-width: 992px) {
+      padding: 0 2rem;
+    }
+
+    @media (max-width: 768px) {
+      padding: 0 1.5rem;
+    }
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 4rem; // Wider gap for larger screens
+    box-sizing: border-box; // Include padding and border in the element's total width and height
+
+    @media (max-width: 1200px) {
+      gap: 3rem;
+    }
+
+    @media (max-width: 992px) {
+      gap: 2rem;
+    }
+
+    @media (max-width: 576px) {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+  .footer-brand {
+    flex: 1;
+    max-width: 300px;
+    box-sizing: border-box; // Include padding and border in the element's total width and height
+
+    h4 {
+      color: var(--text-color);
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+    }
+
+    p {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 576px) {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  .footer-nav {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 4rem; // Wider gap between Quick Links and Legal
+    box-sizing: border-box; // Include padding and border in the element's total width and height
+
+    @media (max-width: 1200px) {
+      gap: 3rem;
+    }
+
+    @media (max-width: 992px) {
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    @media (max-width: 576px) {
+      flex-direction: column;
+      gap: 2rem;
+      align-items: center;
+      text-align: center;
+    }
+
+    .footer-section {
+      h4 {
+        color: var(--text-color);
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+          margin-bottom: 0.75rem;
+
+          a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+
+            &:hover {
+              color: var(--primary-color);
+            }
+          }
+        }
+      }
+
+      @media (max-width: 576px) {
+        width: 100%;
+      }
+    }
+  }
+
+  .footer-copyright {
+    flex: 1;
+    text-align: center;
+    padding: 0.5rem 0;
+    box-sizing: border-box; // Include padding and border in the element's total width and height
+
+    p {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 992px) {
+      order: 3;
+      flex: 100%;
+      margin-top: 1.5rem;
+    }
+  }
+
+  // Responsive Breakpoints
+  @media (max-width: 992px) {
+    .footer-content {
+      flex-wrap: wrap;
+    }
+
+    .footer-brand {
+      flex: 100%;
+      max-width: none;
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .footer-nav {
+      flex: 100%;
+      justify-content: center;
+      gap: 4rem;
+    }
+  }
+
+  @media (max-width: 576px) {
+    padding: 1.5rem 0;
+
+    .footer-nav {
+      flex-direction: column;
+      gap: 2rem;
+      align-items: center;
+      text-align: center;
+    }
+
+    .footer-section {
+      width: 100%;
+    }
+  }
+
+  // Additional Enhancements
+  @media (max-width: 768px) {
+    .footer-content {
+      gap: 1.5rem;
+    }
+
+    .footer-nav {
+      gap: 1.5rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .container {
+      padding: 0 1rem;
+    }
+
+    .footer-content {
+      gap: 1rem;
+    }
+
+    .footer-nav {
+      gap: 1rem;
+    }
+  }
+}
